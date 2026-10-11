@@ -1,40 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STe | Hamburgueria & Pastelaria </title>
     <link rel="stylesheet" href="burguer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Informações/Menu/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Informações/Menu/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Informações/Menu/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/Informações/Menu/favicon_io/site.webmanifest">
+    
 </head>
 <body>
     <header>
         <nav>
             <img src="Informações/logotipo-black sem fundo.jpeg" alt="Logo da Hamburgueria STe">
             <ul>
-                <li><a href="index.html">Menu</a></li>
-                <li><a href="burguer.html">Hamburguerias</a></li>
-                <li><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="#combos-extras">Combos & Extras</a></li>
+                <li><a href="#hamburgueres">Hamburgueres</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
             </ul>
-            <a href=""><button>Pede já!</button></a>
+            <a href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer"><button>Pede já!</button></a>
         </nav>
     </header>
     <main>
         <section>
-
+            <div class="banner-destaque" aria-label="Destaques de hambúrgueres">
+                <img class="banner-imagem" src="Informações/Menu/X-Burguer.png" alt="X-Burguer">
+                <div class="banner-conteudo">
+                    <span>Experimente</span>
+                    <h1 class="banner-titulo">X-Burguer</h1>
+                    <p class="banner-descricao">Hambúrguer com queijo, salada fresca e batatas fritas crocantes.</p>
+                    <strong class="banner-preco">3.000,00 Kz</strong>
+                </div>
+                <div class="banner-controles">
+                    <div class="banner-progresso" role="progressbar" aria-label="Tempo até o próximo slide" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                        <span class="banner-progresso-preenchimento"></span>
+                    </div>
+                    <button class="banner-controle banner-anterior" type="button" aria-label="Ver slide anterior"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+                    <button class="banner-controle banner-proximo" type="button" aria-label="Ver próximo slide"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                    <button class="banner-controle banner-pausa" type="button" aria-label="Pausar slides" aria-pressed="false"><span class="material-symbols-outlined">play_pause</span></button>
+                </div>
+            </div>
         </section>
+        <h1>Sanduíches</h1>
         <section class="Sandes">
             <section class="produtos">
                 <img src="Informações/Menu/Sandes Simples.png" alt="Sanduíche Simples">
                 <div class="info-produto">
                     <h2>Sanduíche Simples</h2>
-                    <p>1.000,00 Kz</p>
-                </div>g
+                    <p>1.000,00 Kz </p>
+                    <div class="pedido">
+                         <span class="material-symbols-outlined">shopping_cart</span>Pede Já! 
+                    </div>                    
+                </div>
             </section>
             <section class="produtos">
                 <img src="Informações/Menu/Sandes De Carne.png" alt="Sanduíche de Carne">
                 <div class="info-produto">
                     <h2>Sanduíche de Carne</h2>
                     <p>1.750,00 Kz</p>
+                    <div class="pedido">
+                         <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                    </div>
                 </div>
             </section>
             <section class="produtos">
@@ -42,6 +71,9 @@
                 <div class="info-produto">
                     <h2>Sanduíche O Trio</h2>
                     <p>2.100,00 Kz</p>
+                    <div class="pedido">
+                         <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                    </div>
                 </div>
             </section>
             <section class="produtos">
@@ -49,6 +81,9 @@
                 <div class="info-produto">
                     <h2>Sanduíche de Ovo</h2>
                     <p>1.300,00 Kz</p>
+                    <div class="pedido">
+                         <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                    </div>
                 </div>
             </section>
             <section class="produtos">
@@ -56,23 +91,31 @@
                 <div class="info-produto">
                     <h2>Misto Quente</h2>
                     <p>3.000,00 Kz</p>
+                    <div class="pedido">
+                         <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                    </div>
                 </div>
             </section>
             <section class="produtos">
                 <img src="Informações/Menu/Doze de Batatas.png" alt="Doze de Batatas">
                 <div class="info-produto">
-                    <h2>Misto Quente</h2>
-                    <p>3.000,00 Kz</p>
+                    <h2>Doze de Batatas</h2>
+                    <p>1.800,00 Kz</p>
+                    <div class="pedido">
+                         <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                    </div>
                 </div>
             </section>
+            
         </section>
-        <section class="Hamburgueres">
+        <h1>Hamburgueres</h1>
+        <section class="Hamburgueres" id="hamburgueres">
             <section class="card-burguer">
                 <img src="Informações/Menu/X-Burguer.png" alt="X-Burguer">
                 <h2>X-Burguer</h2>
                 <p>3.000,00 Kz</p>
                 <div class="pedido">
-                    Pede Já!
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
                 </div>
             </section>
             <section class="card-burguer">
@@ -80,7 +123,7 @@
                 <h2>MacZihn</h2>
                 <p>2.800,00 Kz</p>
                 <div class="pedido">
-                    Pede Já!
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
                 </div>
             </section>
             <section class="card-burguer">
@@ -88,7 +131,7 @@
                 <h2>Maczão</h2>
                 <p>3.900,00 Kz</p>
                 <div class="pedido">
-                    Pede Já!
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
                 </div>
             </section>
             <section class="card-burguer">
@@ -96,7 +139,7 @@
                 <h2>X-STe</h2>
                 <p>5.500,00 Kz</p>
                 <div class="pedido">
-                    Pede Já!
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
                 </div>
             </section>
             <section class="card-burguer">
@@ -104,7 +147,7 @@
                 <h2>Duplo X-Burguer</h2>
                 <p>4.100,00 Kz</p>
                 <div class="pedido">
-                    Pede Já!
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
                 </div>
             </section>
             <section class="card-burguer">
@@ -112,13 +155,327 @@
                 <h2>Hamburguer Simples</h2>
                 <p>2.000,00 Kz</p>
                 <div class="pedido">
-                    Pede Já!
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
                 </div>
             </section>
         </section>
+        <section>
+            <div class="banner-destaque" aria-label="Destaques de hambúrgueres">
+                <img class="banner-imagem" src="Informações/Menu/X-Burguer.png" alt="X-Burguer">
+                <div class="banner-conteudo">
+                    <span>Experimente</span>
+                    <h1 class="banner-titulo">X-Burguer</h1>
+                    <p class="banner-descricao">Hambúrguer com queijo, salada fresca e batatas fritas crocantes.</p>
+                    <strong class="banner-preco">3.000,00 Kz</strong>
+                </div>
+                <div class="banner-controles">
+                    <div class="banner-progresso" role="progressbar" aria-label="Tempo até o próximo slide" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                        <span class="banner-progresso-preenchimento"></span>
+                    </div>
+                    <button class="banner-controle banner-anterior" type="button" aria-label="Ver imagem anterior"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+                    <button class="banner-controle banner-proximo" type="button" aria-label="Ver próxima imagem"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                    <button class="banner-controle banner-pausa" type="button" aria-label="Pausar slides" aria-pressed="false">Pausar</button>
+                </div>
+            </div>
+        </section>
+        <h1 id="combos-extras">Combos & Extras</h1>
+        <section class="Hamburgueres">
+            <section class="card-burguer">
+                <img src="Informações/Menu/Combo de Batatas fritas e Salsicha.png" alt="Combo de Batatas fritas">
+                <h2>Combo de Batatas fritas</h2>
+                <p>3.000,00 Kz</p>
+                <div class="pedido">
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                </div>
+            </section>
+            <section class="card-burguer">
+                <img src="Informações/Menu/Combo X-Burguer.png" alt="Combo X-Burguer">
+                <h2>Combo X-Burguer</h2>
+                <p>6.800,00 Kz</p>
+                <div class="pedido">
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                </div>
+            </section>
+            <section class="card-burguer">
+                <img src="Informações/Menu/Rissóis e croquetes.png" alt="Rissóis e croquetes">
+                <h2>Rissóis e croquetes</h2>
+                <p>375,00 Kz (Por Unidade)</p>
+                <div class="pedido">
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                </div>
+            </section>
+            <section class="card-burguer">
+                <img src="Informações/Menu/X-Burguer + Doze de batatas.png" alt="X-Burguer + Doze de batatas">
+                <h2>X-Burguer + Doze de batatas</h2>
+                <p>4.800,00 Kz</p>
+                <div class="pedido">
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                </div>
+            </section>
+            <section class="card-burguer">
+                <img src="Informações/Menu/X-Burguer Duplo + Doze de Batatas.png" alt="X-Burguer Duplo + Doze de Batatas">
+                <h2>X-Burguer Duplo + Doze de Batatas</h2>
+                <p>5.900,00 Kz</p>
+                <div class="pedido">
+                     <span class="material-symbols-outlined">shopping_cart</span>Pede Já!
+                </div>
+            </section>
+        </section>
+        <h1 id="bebidas">Bebidas</h1>
+        <section class="lista-bebidas" aria-label="Bebidas disponíveis">
+            <article class="bebida-item"><h2>Sprite</h2></article>
+            <article class="bebida-item"><h2>Coca-cola</h2></article>
+            <article class="bebida-item"><h2>Sumol</h2></article>
+            <article class="bebida-item"><h2>Pepsi</h2></article>
+            <article class="bebida-item"><h2>7up</h2></article>
+            <article class="bebida-item"><h2>Astro</h2></article>
+            <article class="bebida-item"><h2>Compal</h2></article>
+            <article class="bebida-item"><h2>Água</h2></article>
+        </section>
     </main>
-    <footer>
-        
+    <dialog class="pedido-dialog" id="selecao-bebida">
+        <form id="form-pedido">
+            <span class="pedido-dialog-etiqueta">Seu pedido</span>
+            <h2>Escolha uma bebida</h2>
+            <p id="comida-selecionada" class="pedido-dialog-comida"></p>
+            <fieldset class="bebidas-opcoes">
+                <legend>Bebida</legend>
+                <label class="bebida-opcao"><input type="radio" name="bebida" value="Sprite" required><span class="material-symbols-outlined" aria-hidden="true">local_drink</span><span>Sprite</span></label>
+                <label class="bebida-opcao"><input type="radio" name="bebida" value="Coca-cola" required><span class="material-symbols-outlined" aria-hidden="true">local_drink</span><span>Coca-cola</span></label>
+                <label class="bebida-opcao"><input type="radio" name="bebida" value="Sumol" required><span class="material-symbols-outlined" aria-hidden="true">local_drink</span><span>Sumol</span></label>
+                <label class="bebida-opcao"><input type="radio" name="bebida" value="Pepsi" required><span class="material-symbols-outlined" aria-hidden="true">local_drink</span><span>Pepsi</span></label>
+                <label class="bebida-opcao"><input type="radio" name="bebida" value="7up" required><span class="material-symbols-outlined" aria-hidden="true">local_drink</span><span>7up</span></label>
+                <label class="bebida-opcao"><input type="radio" name="bebida" value="Astro" required><span class="material-symbols-outlined" aria-hidden="true">local_drink</span><span>Astro</span></label>
+                <label class="bebida-opcao"><input type="radio" name="bebida" value="Compal" required><span class="material-symbols-outlined" aria-hidden="true">local_drink</span><span>Compal</span></label>
+                <label class="bebida-opcao"><input type="radio" name="bebida" value="Água" required><span class="material-symbols-outlined" aria-hidden="true">water_drop</span><span>Água</span></label>
+                <label class="bebida-opcao bebida-sem"><input type="radio" name="bebida" value="Nenhuma bebida" required><span class="material-symbols-outlined" aria-hidden="true">do_not_disturb_on</span><span>Nenhuma bebida</span></label>
+            </fieldset>
+            <div class="pedido-dialog-acoes">
+                <button class="dialog-cancelar" id="cancelar-pedido" type="button">Cancelar</button>
+                <button class="dialog-confirmar" type="submit" disabled>Enviar pelo WhatsApp</button>
+            </div>
+        </form>
+    </dialog>
+    <footer class="site-footer">
+        <div class="footer-conteudo">
+            <a class="footer-marca" href="burguer.html" aria-label="Página inicial da Hamburgueria STe">
+                <img src="Informações/logotipo-black sem fundo.jpeg" alt="Logo da Hamburgueria STe">
+            </a>
+            <div class="footer-colunas">
+                <section class="footer-bloco">
+                    <h2>Contacto</h2>
+                    <p>Telefone (+244): 934 230 757</p>
+                    <p>Endereço: Angola, Namibe, Bairro Mandume, Rua das Oliveiras</p>
+                    <p>Email: hamburgueriaste20@gmail.com</p>
+                </section>
+                <section class="footer-bloco">
+                    <h2>Horário</h2>
+                    <p>09:30 - 22:00</p>
+                </section>
+                <section class="footer-bloco">
+                    <h2>Redes sociais</h2>
+                    <a class="footer-social" href="https://www.instagram.com/hamburgueria.ste/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Hamburgueria STe">
+                        <span class="material-symbols-outlined" aria-hidden="true">photo_camera</span><span>Instagram: Hamburgueria STe</span>
+                    </a>
+                    <a class="footer-social" href="https://www.facebook.com/HamburgueriaSTe/" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Hamburgueria STe">
+                        <span class="material-symbols-outlined" aria-hidden="true">thumb_up</span><span>Facebook: Hamburgueria STe</span>
+                    </a>
+                    <a class="footer-social" href="https://www.tiktok.com/@hamburgueria.ste" target="_blank" rel="noopener noreferrer" aria-label="TikTok da Hamburgueria STe">
+                        <span class="material-symbols-outlined" aria-hidden="true">music_note</span><span>TikTok: hamburgueria.ste</span>
+                    </a>
+                    <p>+244 934 230 757</p>
+                </section>
+            </div>
+        </div>
+        <div class="footer-final">
+            <p>Desde 2020 servindo o melhor hambúrguer para vocês.</p>
+            <p>&copy; 2027 Hamburgueria STe</p>
+        </div>
     </footer>
+    <script>
+        const numeroWhatsApp = "244934230757";
+        const dialogPedido = document.getElementById("selecao-bebida");
+        const formularioPedido = document.getElementById("form-pedido");
+        const comidaSelecionada = document.getElementById("comida-selecionada");
+        const botaoEnviarPedido = formularioPedido.querySelector("[type='submit']");
+        let comidaDoPedido = "";
+
+        document.querySelectorAll(".pedido").forEach((pedido) => {
+            const produto = pedido.closest(".produtos, .card-burguer");
+            const nomeProduto = produto?.querySelector("h2")?.textContent.trim();
+            if (!nomeProduto) return;
+
+            const botaoPedido = document.createElement("button");
+            botaoPedido.className = pedido.className;
+            botaoPedido.type = "button";
+            botaoPedido.innerHTML = pedido.innerHTML;
+            botaoPedido.addEventListener("click", () => {
+                comidaDoPedido = nomeProduto;
+                comidaSelecionada.textContent = comidaDoPedido;
+                formularioPedido.reset();
+                botaoEnviarPedido.disabled = true;
+                dialogPedido.showModal();
+            });
+            pedido.replaceWith(botaoPedido);
+        });
+
+        document.getElementById("cancelar-pedido").addEventListener("click", () => {
+            dialogPedido.close();
+        });
+
+        formularioPedido.addEventListener("change", (evento) => {
+            if (evento.target.name === "bebida") {
+                botaoEnviarPedido.disabled = !formularioPedido.querySelector("input[name='bebida']:checked");
+            }
+        });
+
+        formularioPedido.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+            const bebida = formularioPedido.querySelector("input[name='bebida']:checked")?.value;
+            if (!bebida) return;
+
+            const mensagem = bebida === "Nenhuma bebida"
+                ? `Olá! Eu gostaria de ${comidaDoPedido} sem bebida.`
+                : `Olá! Eu gostaria de ${comidaDoPedido} com ${bebida}.`;
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+            window.open(urlWhatsApp, "_blank", "noopener,noreferrer");
+            dialogPedido.close();
+        });
+
+        const destaques = [
+            {
+                imagem: "Informações/Menu/X-Burguer.png",
+                alt: "X-Burguer",
+                nome: "X-Burguer",
+                descricao: "Hambúrguer com queijo, salada fresca e batatas fritas crocantes.",
+                preco: "3.000,00 Kz"
+            },
+            {
+                imagem: "Informações/Menu/MacZinh.png",
+                alt: "MacZihn",
+                nome: "MacZihn",
+                descricao: "Hambúrguer suculento com bacon e batatas fritas para acompanhar.",
+                preco: "2.800,00 Kz"
+            },
+            {
+                imagem: "Informações/Menu/Maczão.png",
+                alt: "Maczão",
+                nome: "Maczão",
+                descricao: "Pão com gergelim, queijo derretido e salada fresca.",
+                preco: "3.900,00 Kz"
+            },
+            {
+                imagem: "Informações/Menu/X-STe.png",
+                alt: "X-STe",
+                nome: "X-STe",
+                descricao: "Um hambúrguer caprichado, preparado para matar a sua fome.",
+                preco: "5.500,00 Kz"
+            },
+            {
+                imagem: "Informações/Menu/Duplo X-Burguer.png",
+                alt: "Duplo X-Burguer",
+                nome: "Duplo X-Burguer",
+                descricao: "Hambúrguer com queijo e salada, acompanhado de batatas crocantes.",
+                preco: "4.100,00 Kz"
+            }
+        ];
+
+        function iniciarBanner(banner) {
+            const bannerImagem = banner.querySelector(".banner-imagem");
+            const bannerTitulo = banner.querySelector(".banner-titulo");
+            const bannerDescricao = banner.querySelector(".banner-descricao");
+            const bannerPreco = banner.querySelector(".banner-preco");
+            const bannerProgresso = banner.querySelector(".banner-progresso");
+            const bannerProgressoPreenchimento = banner.querySelector(".banner-progresso-preenchimento");
+            const botaoPausa = banner.querySelector(".banner-pausa");
+            const slides = destaques;
+            const duracaoSlide = 6000;
+            const duracaoTransicao = 450;
+            let destaqueAtual = 0;
+            let trocandoDestaque = false;
+            let pausado = false;
+            let somAtivo = false;
+            let tempoDecorrido = 0;
+            let inicioSlide = performance.now();
+            let quadroProgresso;
+
+            function aplicarDestaque(destaque) {
+                bannerTitulo.textContent = destaque.nome;
+                bannerDescricao.textContent = destaque.descricao;
+                bannerPreco.textContent = destaque.preco;
+                bannerImagem.src = destaque.imagem;
+                bannerImagem.alt = destaque.alt;
+            }
+
+            function atualizarProgresso(agora) {
+                if (pausado || trocandoDestaque) return;
+
+                tempoDecorrido = agora - inicioSlide;
+                const porcentagem = Math.min((tempoDecorrido / duracaoSlide) * 100, 100);
+                bannerProgressoPreenchimento.style.width = `${porcentagem}%`;
+                bannerProgresso.setAttribute("aria-valuenow", Math.round(porcentagem));
+
+                if (tempoDecorrido >= duracaoSlide) {
+                    mostrarDestaque(destaqueAtual + 1);
+                    return;
+                }
+
+                quadroProgresso = requestAnimationFrame(atualizarProgresso);
+            }
+
+            function iniciarProgresso() {
+                inicioSlide = performance.now() - tempoDecorrido;
+                quadroProgresso = requestAnimationFrame(atualizarProgresso);
+            }
+
+            function mostrarDestaque(indice) {
+                if (trocandoDestaque) return;
+
+                trocandoDestaque = true;
+                cancelAnimationFrame(quadroProgresso);
+                banner.classList.add("trocando");
+
+                setTimeout(() => {
+                    destaqueAtual = (indice + slides.length) % slides.length;
+                    aplicarDestaque(slides[destaqueAtual]);
+                    banner.classList.remove("trocando");
+                    bannerProgressoPreenchimento.style.width = "0%";
+                    bannerProgresso.setAttribute("aria-valuenow", "0");
+                    tempoDecorrido = 0;
+                    trocandoDestaque = false;
+                    if (!pausado) iniciarProgresso();
+                }, duracaoTransicao);
+            }
+
+            banner.querySelector(".banner-anterior").addEventListener("click", () => {
+                mostrarDestaque(destaqueAtual - 1);
+            });
+
+            banner.querySelector(".banner-proximo").addEventListener("click", () => {
+                mostrarDestaque(destaqueAtual + 1);
+            });
+
+            botaoPausa.addEventListener("click", () => {
+                if (trocandoDestaque) return;
+
+                pausado = !pausado;
+                botaoPausa.textContent = pausado ? "Continuar" : "Pausar";
+                botaoPausa.setAttribute("aria-label", pausado ? "Continuar slides" : "Pausar slides");
+                botaoPausa.setAttribute("aria-pressed", String(pausado));
+
+                if (pausado) {
+                    tempoDecorrido = performance.now() - inicioSlide;
+                    cancelAnimationFrame(quadroProgresso);
+                } else {
+                    iniciarProgresso();
+                }
+            });
+
+            aplicarDestaque(slides[destaqueAtual]);
+            iniciarProgresso();
+        }
+
+        document.querySelectorAll(".banner-destaque").forEach(iniciarBanner);
+    </script>
 </body>
 </html>
