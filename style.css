@@ -1,0 +1,90 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+
+}
+
+header {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FDCF22;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    background-color: #FDCF22;
+    margin-left: 60px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #5a3e1b;
+    font-weight: 700;
+    font-size: 20px;
+    transition: color 0.3s ; 
+
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pedido button{
+    background-color: #68461d;
+    color: #fdddb6;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+
+.Logo {
+    height: 65px;
+    display: block;
+}
+
+main.conteudo > section > img {
+    width: 100%;
+    height: 90vh;
+}
+
+main {
+    background-image: url("Informações/Fundo Hamburgueria STe.png");
+    background-size: cover;
+}
+
+header > section.menu li a {
+    text-decoration: none;
+    color: rgb(59, 34, 0);
+    list-style: none;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+}
