@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veja o cardápio da Hamburgueria STe: hambúrgueres, sanduíches, combos e bebidas em Namibe.">
+    <title>Cardápio | Hamburgueria STe</title>
+    <link rel="stylesheet" href="burguer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="mobile-menu.js" defer></script>
+    <script src="site-motion.js" defer></script>
+    <script src="food-cards.js" defer></script>
+    <script src="order-drink.js" defer></script>
+    <script src="site-preferences.js" defer></script>
+</head>
+<body class="site-mac">
+    <header>
+        <nav aria-label="Navegação principal">
+            <a class="mac-logo" href="index.html" aria-label="Página inicial da Hamburgueria STe"><img src="Informações/Logotipo sem fundo.png" alt="Hamburgueria STe"><span>HAMBURGUERIA<br><strong>STe</strong></span></a>
+            <button class="mobile-menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button>
+            <ul class="navegacao-links" id="menu-principal">
+                <li><a href="cardapio.html#hamburgueres" aria-current="page">Menu</a></li>
+                <li><a href="index.html#promos">Promoções</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="nav-reservas" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>Reservas</a></li>
+                <li class="mobile-nav-order"><a class="header-order" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">FAZER PEDIDO</a></li>
+            </ul>
+            <a class="header-order" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">FAZER PEDIDO</a>
+            <div class="site-controls">
+                <button class="theme-toggle" data-theme-toggle type="button" aria-label="Ativar modo claro" title="Ativar modo claro" aria-pressed="false"><span class="material-symbols-outlined" aria-hidden="true">light_mode</span></button>
+                <select class="language-select" data-language aria-label="Idioma"><option value="pt">PT</option><option value="en">EN</option><option value="es">ES</option></select>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mac-section mac-favorites mac-popular-menu" id="mais-pedidos" data-reveal>
+            <div class="mac-section-heading"><p>ESCOLHAS DA CASA</p><h1>OS MAIS PEDIDOS</h1></div>
+            <div class="mac-feature-grid">
+                <a class="mac-feature" href="#hamburgueres" data-reveal><div class="mac-feature-image"><img src="Informações/Menu/X-Burguer.png" alt="X-Burguer"><span>MAIS PEDIDO</span></div><div class="mac-feature-info"><div><h3>X-BURGUER</h3><p>Hambúrguer com queijo e salada fresca.</p><span class="food-card-meta"><span class="material-symbols-outlined" aria-hidden="true">schedule</span>Feito na hora</span></div><strong>3.000,00 Kz</strong></div></a>
+                <a class="mac-feature" href="#hamburgueres" data-reveal><div class="mac-feature-image"><img src="Informações/Menu/Maczão.png" alt="Maczão"><span>MAIS PEDIDO</span></div><div class="mac-feature-info"><div><h3>MACZÃO</h3><p>Pão com gergelim, queijo derretido e salada fresca.</p><span class="food-card-meta"><span class="material-symbols-outlined" aria-hidden="true">schedule</span>Feito na hora</span></div><strong>3.900,00 Kz</strong></div></a>
+                <a class="mac-feature" href="#combos" data-reveal><div class="mac-feature-image"><img src="Informações/Menu/Combo X-Burguer.png" alt="Combo X-Burguer"><span>COMBO FAVORITO</span></div><div class="mac-feature-info"><div><h3>COMBO X-BURGUER</h3><p>O clássico da casa com acompanhamento.</p><span class="food-card-meta"><span class="material-symbols-outlined" aria-hidden="true">schedule</span>Feito na hora</span></div><strong>6.800,00 Kz</strong></div></a>
+            </div>
+        </section>
+
+        <h2 id="hamburgueres">Hambúrgueres</h2>
+        <section class="Hamburgueres" aria-label="Hambúrgueres" data-reveal>
+            <article class="card-burguer"><img src="Informações/Menu/X-Burguer.png" alt="X-Burguer"><h2>X-Burguer</h2><p>3.000,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20X-Burguer." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/MacZinh.png" alt="MacZinh"><h2>MacZinh</h2><p>2.800,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20MacZinh." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/Maczão.png" alt="Maczão"><h2>Maczão</h2><p>3.900,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20Macz%C3%A3o." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/X-STe.png" alt="X-STe"><h2>X-STe</h2><p>5.500,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20X-STe." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/Duplo X-Burguer.png" alt="Duplo X-Burguer"><h2>Duplo X-Burguer</h2><p>4.100,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20Duplo%20X-Burguer." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/O Clássico.png" alt="Hambúrguer Simples"><h2>Hambúrguer Simples</h2><p>2.000,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20Hamb%C3%BArguer%20Simples." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+        </section>
+
+        <h2 id="sanduiches">Sanduíches</h2>
+        <section class="Hamburgueres" aria-label="Sanduíches e extras" data-reveal>
+            <article class="card-burguer"><img src="Informações/Menu/Sandes Simples.png" alt="Sanduíche Simples"><h2>Sanduíche Simples</h2><p>1.000,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20Sandu%C3%ADche%20Simples." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/Sandes De Carne.png" alt="Sanduíche de Carne"><h2>Sanduíche de Carne</h2><p>1.750,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20Sandu%C3%ADche%20de%20Carne." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/O Trio.png" alt="Sanduíche O Trio"><h2>O Trio</h2><p>2.100,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20O%20Trio." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/Sandes de Ovo e Salsicha.png" alt="Sanduíche de Ovo e Salsicha"><h2>Sanduíche de Ovo e Salsicha</h2><p>1.300,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20Sandu%C3%ADche%20de%20Ovo%20e%20Salsicha." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/Misto Quente.png" alt="Misto Quente"><h2>Misto Quente</h2><p>3.000,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20um%20Misto%20Quente." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+        </section>
+
+        <h2 id="combos">Combos</h2>
+        <section class="Hamburgueres" aria-label="Combos" data-reveal>
+            <article class="card-burguer"><img src="Informações/Menu/Combo de Batatas fritas e Salsicha.png" alt="Combo de batatas fritas e salsicha"><h2>Batatas fritas e salsicha</h2><p>3.000,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20o%20Combo%20de%20Batatas%20e%20Salsicha." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/Combo X-Burguer.png" alt="Combo X-Burguer"><h2>Combo X-Burguer</h2><p>6.800,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20o%20Combo%20X-Burguer." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/X-Burguer + Doze de batatas.png" alt="X-Burguer com batatas"><h2>X-Burguer + batatas</h2><p>4.800,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20X-Burguer%20com%20batatas." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/X-Burguer Duplo + Doze de Batatas.png" alt="X-Burguer duplo com batatas"><h2>X-Burguer Duplo + batatas</h2><p>5.900,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20X-Burguer%20Duplo%20com%20batatas." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+        </section>
+
+        <h2 id="extras">Extras</h2>
+        <section class="Hamburgueres" aria-label="Acompanhamentos e salgados" data-reveal>
+            <article class="card-burguer"><img src="Informações/Menu/Doze de Batatas.png" alt="Porção de batatas"><h2>Doze de Batatas</h2><p>1.800,00 Kz</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20uma%20por%C3%A7%C3%A3o%20de%20batatas." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+            <article class="card-burguer"><img src="Informações/Menu/Rissóis e croquetes.png" alt="Rissóis e croquetes"><h2>Rissóis e croquetes</h2><p>375,00 Kz por unidade</p><a class="pedido" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Quero%20pedir%20riss%C3%B3is%20e%20croquetes." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span> Pedir pelo WhatsApp</a></article>
+        </section>
+
+        <h2 id="bebidas">Bebidas</h2>
+        <section class="lista-bebidas" aria-label="Bebidas disponíveis" data-reveal>
+            <article class="bebida-item"><img src="Informações/Bebidas-Ft/Sprite.jpg" alt="Refrigerante Sprite"><h2>Sprite</h2></article>
+            <article class="bebida-item"><img src="Informações/Bebidas-Ft/Coca-Cola.jpg" alt="Refrigerante Coca-Cola"><h2>Coca-Cola</h2></article>
+            <article class="bebida-item"><img src="Informações/Bebidas-Ft/Sumol.jfif" alt="Bebida Sumol"><h2>Sumol</h2></article>
+            <article class="bebida-item"><img src="Informações/Bebidas-Ft/Pepsi.jpg" alt="Refrigerante Pepsi"><h2>Pepsi</h2></article>
+            <article class="bebida-item"><img src="Informações/Bebidas-Ft/7up.jfif" alt="Refrigerante 7up"><h2>7up</h2></article>
+            <article class="bebida-item"><img src="Informações/Bebidas-Ft/Astro.jpg" alt="Bebida Astro"><h2>Astro</h2></article>
+            <article class="bebida-item"><img src="Informações/Bebidas-Ft/compal.jpg" alt="Sumo Compal"><h2>Compal</h2></article>
+            <article class="bebida-item"><img src="Informações/Bebidas-Ft/agua.jfif" alt="Água"><h2>Água</h2></article>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-conteudo">
+            <a class="footer-marca" href="index.html" aria-label="Página inicial da Hamburgueria STe"><img src="Informações/logotipo-black sem fundo.jpeg" alt="Hamburgueria STe"></a>
+            <div class="footer-colunas">
+                <section class="footer-bloco"><h2>Contacto</h2><p>Telefone (+244): 934 230 757</p><p>Namibe, Bairro Mandume, Rua das Oliveiras</p><p>hamburgueriaste20@gmail.com</p></section>
+                <section class="footer-bloco"><h2>Horário</h2><p>Todos os dias, das 09:30 às 22:00</p></section>
+                <section class="footer-bloco"><h2>Redes sociais</h2><a class="footer-social" href="https://www.instagram.com/hamburgueria.ste/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Hamburgueria STe"><img class="footer-social-logo" src="Informações/Redes-Sociais/instagram.svg" alt="" aria-hidden="true"><span>Instagram: Hamburgueria STe</span></a><a class="footer-social" href="https://www.facebook.com/HamburgueriaSTe/" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Hamburgueria STe"><img class="footer-social-logo" src="Informações/Redes-Sociais/facebook.svg" alt="" aria-hidden="true"><span>Facebook: Hamburgueria STe</span></a><a class="footer-social" href="https://www.tiktok.com/@hamburgueria.ste" target="_blank" rel="noopener noreferrer" aria-label="TikTok da Hamburgueria STe"><img class="footer-social-logo" src="Informações/Redes-Sociais/tiktok.svg" alt="" aria-hidden="true"><span>TikTok: hamburgueria.ste</span></a></section>
+            </div>
+        </div>
+        <div class="footer-final"><p>Desde 2020 servindo o melhor hambúrguer para vocês.</p><p>&copy; 2026 Hamburgueria STe</p></div>
+    </footer>
+</body>
+</html>

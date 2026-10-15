@@ -3,28 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STe | Hamburgueria & Pastelaria </title>
+    <meta name="description" content="Hambúrgueres, sanduíches e combos preparados pela Hamburgueria STe em Namibe.">
+    <title>Hamburgueria STe | Sabor de verdade</title>
     <link rel="stylesheet" href="burguer.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="mobile-menu.js" defer></script>
+    <script src="site-motion.js" defer></script>
+    <script src="site-preferences.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/Informações/Menu/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/Informações/Menu/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Informações/Menu/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/Informações/Menu/favicon_io/site.webmanifest">
     
 </head>
-<body>
+<body class="site-mac home-page">
     <header>
-        <nav>
-            <img src="Informações/logotipo-black sem fundo.jpeg" alt="Logo da Hamburgueria STe">
-            <ul>
-                <li><a href="#combos-extras">Combos & Extras</a></li>
-                <li><a href="#hamburgueres">Hamburgueres</a></li>
-                <li><a href="#bebidas">Bebidas</a></li>
+        <nav aria-label="Navegação principal">
+            <a class="mac-logo" href="index.html" aria-label="Página inicial da Hamburgueria STe"><img src="Informações/Logotipo sem fundo.png" alt="Hamburgueria STe"><span>HAMBURGUERIA<br><strong>STe</strong></span></a>
+            <button class="mobile-menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button>
+            <ul id="menu-principal">
+                <li><a href="cardapio.html">Menu</a></li>
+                <li><a href="#promos">Promoções</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="nav-reservas" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>Reservas</a></li>
+                <li class="mobile-nav-order"><a class="header-order" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">FAZER PEDIDO</a></li>
             </ul>
-            <a href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer"><button>Pede já!</button></a>
+               <div class="site-controls">
+                   <button class="theme-toggle" data-theme-toggle type="button" aria-label="Ativar modo claro" title="Ativar modo claro" aria-pressed="false"><span class="material-symbols-outlined" aria-hidden="true">light_mode</span></button>
+                   <select class="language-select" data-language aria-label="Idioma"><option value="pt">PT</option><option value="en">EN</option><option value="es">ES</option></select>
+               </div>
+            <a class="header-order" href="https://wa.me/244934230757?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">FAZER PEDIDO</a>
         </nav>
     </header>
-    <main>
+    <main class="home-main">
+        <section class="home-showcase">
+            <section class="mac-home-hero" aria-label="Hamburgueria STe">
+                <img class="mac-hero-image" src="Informações/sk-CK6tjAIMJWM-unsplash.jpg" alt="Hambúrguer artesanal da Hamburgueria STe">
+                <div class="mac-hero-copy">
+                    <span class="mac-kicker">Hambúrgueres artesanais · Namibe</span>
+                    <h1>SABOR<br><em>DE</em><br>VERDADE<br><span>STe</span></h1>
+                    <p>Hambúrgueres, sanduíches e combos preparados com sabor desde 2020.</p>
+                    <div class="mac-hero-actions"><a class="mac-button mac-button-gold" href="cardapio.html">VER MENU</a><a class="mac-button mac-button-outline" href="sobre.html">SOBRE NÓS</a></div>
+                    <a class="mac-social-proof" href="https://www.instagram.com/hamburgueria.ste/" target="_blank" rel="noopener noreferrer"><strong>STe</strong><span>@hamburgueria.ste</span></a>
+                </div>
+            </section>
+
+            <div class="mac-marquee" aria-label="Hambúrgueres, combos, sanduíches e bebidas"><div class="mac-marquee-track"><span class="mac-marquee-item">HAMBÚRGUERES · COMBOS · SANDUÍCHES · FEITO NA HORA · NAMIBE · HAMBÚRGUERES · COMBOS · SANDUÍCHES · FEITO NA HORA · NAMIBE ·</span><span class="mac-marquee-item" aria-hidden="true">HAMBÚRGUERES · COMBOS · SANDUÍCHES · FEITO NA HORA · NAMIBE · HAMBÚRGUERES · COMBOS · SANDUÍCHES · FEITO NA HORA · NAMIBE ·</span></div></div>
+
+            <section class="mac-section mac-categories" id="menu" data-reveal>
+                <div class="mac-section-heading"><p>O NOSSO MENU</p><h2>ESCOLHA O SEU FAVORITO</h2></div>
+                <div class="mac-category-grid">
+                    <a class="mac-category" href="cardapio.html#hamburgueres" data-reveal><span class="material-symbols-outlined" aria-hidden="true">lunch_dining</span><strong>HAMBÚRGUERES</strong></a>
+                    <a class="mac-category" href="cardapio.html#combos" data-reveal><span class="material-symbols-outlined" aria-hidden="true">fastfood</span><strong>COMBOS</strong></a>
+                    <a class="mac-category" href="cardapio.html#sanduiches" data-reveal><span class="material-symbols-outlined" aria-hidden="true">bakery_dining</span><strong>SANDUÍCHES</strong></a>
+                    <a class="mac-category" href="cardapio.html#extras" data-reveal><span class="material-symbols-outlined" aria-hidden="true">lunch_dining</span><strong>EXTRAS</strong></a>
+                    <a class="mac-category" href="cardapio.html#bebidas" data-reveal><span class="material-symbols-outlined" aria-hidden="true">local_drink</span><strong>BEBIDAS</strong></a>
+                </div>
+                <a class="mac-text-link" href="cardapio.html">VER MENU COMPLETO <span aria-hidden="true">↗</span></a>
+            </section>
+
+            <section class="mac-section mac-favorites" data-reveal>
+                <div class="mac-section-heading"><p>ESCOLHAS DA CASA</p><h2>OS MAIS PEDIDOS</h2></div>
+                <div class="mac-feature-grid">
+                    <a class="mac-feature" href="cardapio.html#hamburgueres" data-reveal><div class="mac-feature-image"><img src="Informações/Menu/X-Burguer.png" alt="X-Burguer"><span>MAIS PEDIDO</span></div><div class="mac-feature-info"><div><h3>X-BURGUER</h3><p>Hambúrguer com queijo e salada fresca.</p><span class="food-card-meta"><span class="material-symbols-outlined" aria-hidden="true">schedule</span>Feito na hora</span></div><strong>3.000,00 Kz</strong></div></a>
+                    <a class="mac-feature" href="cardapio.html#hamburgueres" data-reveal><div class="mac-feature-image"><img src="Informações/Menu/Maczão.png" alt="Maczão"><span>MAIS PEDIDO</span></div><div class="mac-feature-info"><div><h3>MACZÃO</h3><p>Pão com gergelim, queijo derretido e salada fresca.</p><span class="food-card-meta"><span class="material-symbols-outlined" aria-hidden="true">schedule</span>Feito na hora</span></div><strong>3.900,00 Kz</strong></div></a>
+                    <a class="mac-feature" href="cardapio.html#combos" data-reveal><div class="mac-feature-image"><img src="Informações/Menu/Combo X-Burguer.png" alt="Combo X-Burguer"><span>COMBO FAVORITO</span></div><div class="mac-feature-info"><div><h3>COMBO X-BURGUER</h3><p>O clássico da casa com acompanhamento.</p><span class="food-card-meta"><span class="material-symbols-outlined" aria-hidden="true">schedule</span>Feito na hora</span></div><strong>6.800,00 Kz</strong></div></a>
+                </div>
+            </section>
+
+            <section class="mac-promo" id="promos" data-reveal>
+                <div><p>PARA PARTILHAR</p><h2>O seu próximo<br>combo favorito.</h2><a class="mac-button mac-button-dark" href="cardapio.html#combos">DESCOBRIR COMBOS</a></div>
+                <img src="Informações/Menu/Combo X-Burguer.png" alt="Combo X-Burguer da Hamburgueria STe">
+                <strong class="mac-promo-price">6.800,00 <small>Kz</small></strong>
+            </section>
+
+            <section class="mac-section mac-how" data-reveal>
+                <div class="mac-section-heading"><p>SIMPLES E RÁPIDO</p><h2>DO SEU JEITO, SEM COMPLICAÇÃO</h2></div>
+                <div class="mac-steps"><article><span>01</span><h3>ESCOLHA</h3><p>Encontre o seu favorito no menu.</p></article><article><span>02</span><h3>PEÇA</h3><p>Envie o pedido pelo WhatsApp.</p></article><article><span>03</span><h3>APROVEITE</h3><p>Preparamos tudo na hora.</p></article></div>
+            </section>
+
+            <section class="mac-about" id="about" data-reveal>
+                <div class="mac-about-copy"><p>SOBRE A STe</p><h2>Feito com<br><em>vontade.</em></h2><p>Desde 2020, servimos hambúrgueres, sanduíches e combos em Namibe. Comida farta, ingredientes frescos e sabor para voltar.</p><a class="mac-text-link" href="sobre.html">CONHEÇA A NOSSA HISTÓRIA <span aria-hidden="true">↗</span></a></div>
+                <img src="Informações/Cheeseburger e Coca-Cola no Amarelo.png" alt="Hambúrguer e bebida da Hamburgueria STe">
+            </section>
+
+            <section class="mac-contact-strip" id="contact" data-reveal><div><p>À SUA ESPERA EM NAMIBE</p><h2>Hoje merece um bom hambúrguer.</h2></div><a class="mac-button mac-button-gold" href="contacto.html">FALE CONNOSCO</a></section>
+        </section>
         <section>
             <div class="banner-destaque" aria-label="Destaques de hambúrgueres">
                 <img class="banner-imagem" src="Informações/Menu/X-Burguer.png" alt="X-Burguer">
@@ -232,6 +297,7 @@
             <article class="bebida-item"><h2>Compal</h2></article>
             <article class="bebida-item"><h2>Água</h2></article>
         </section>
+        </section>
     </main>
     <dialog class="pedido-dialog" id="selecao-bebida">
         <form id="form-pedido">
@@ -258,7 +324,7 @@
     </dialog>
     <footer class="site-footer">
         <div class="footer-conteudo">
-            <a class="footer-marca" href="burguer.html" aria-label="Página inicial da Hamburgueria STe">
+            <a class="footer-marca" href="index.html" aria-label="Página inicial da Hamburgueria STe">
                 <img src="Informações/logotipo-black sem fundo.jpeg" alt="Logo da Hamburgueria STe">
             </a>
             <div class="footer-colunas">
@@ -275,13 +341,13 @@
                 <section class="footer-bloco">
                     <h2>Redes sociais</h2>
                     <a class="footer-social" href="https://www.instagram.com/hamburgueria.ste/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Hamburgueria STe">
-                        <span class="material-symbols-outlined" aria-hidden="true">photo_camera</span><span>Instagram: Hamburgueria STe</span>
+                        <img class="footer-social-logo" src="Informações/Redes-Sociais/instagram.svg" alt="" aria-hidden="true"><span>Instagram: Hamburgueria STe</span>
                     </a>
                     <a class="footer-social" href="https://www.facebook.com/HamburgueriaSTe/" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Hamburgueria STe">
-                        <span class="material-symbols-outlined" aria-hidden="true">thumb_up</span><span>Facebook: Hamburgueria STe</span>
+                        <img class="footer-social-logo" src="Informações/Redes-Sociais/facebook.svg" alt="" aria-hidden="true"><span>Facebook: Hamburgueria STe</span>
                     </a>
                     <a class="footer-social" href="https://www.tiktok.com/@hamburgueria.ste" target="_blank" rel="noopener noreferrer" aria-label="TikTok da Hamburgueria STe">
-                        <span class="material-symbols-outlined" aria-hidden="true">music_note</span><span>TikTok: hamburgueria.ste</span>
+                        <img class="footer-social-logo" src="Informações/Redes-Sociais/tiktok.svg" alt="" aria-hidden="true"><span>TikTok: hamburgueria.ste</span>
                     </a>
                     <p>+244 934 230 757</p>
                 </section>
@@ -475,7 +541,9 @@
             iniciarProgresso();
         }
 
-        document.querySelectorAll(".banner-destaque").forEach(iniciarBanner);
+        if (!document.body.classList.contains("home-page")) {
+            document.querySelectorAll(".banner-destaque").forEach(iniciarBanner);
+        }
     </script>
 </body>
 </html>
