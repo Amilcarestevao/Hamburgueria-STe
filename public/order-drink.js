@@ -7,7 +7,7 @@ dialogPedido.innerHTML = `
         <p id="comida-selecionada" class="pedido-dialog-comida"></p>
         <fieldset class="bebidas-opcoes">
             <legend>Bebida</legend>
-            ${["Sprite", "Coca-Cola", "Sumol", "Pepsi", "7up", "Astro", "Compal", "Água", "Nenhuma bebida"].map((bebida) => {
+            ${["Sprite", "Coca-Cola", "Coca-Cola em garrafa", "Sumol", "Sumol em garrafa", "Booster", "Smirnoff", "Speed", "Pepsi", "7up", "Astro", "Compal", "Água", "Nenhuma bebida"].map((bebida) => {
                 const icone = bebida === "Água" ? "water_drop" : bebida === "Nenhuma bebida" ? "do_not_disturb_on" : "local_drink";
                 const classe = bebida === "Nenhuma bebida" ? " bebida-sem" : "";
                 return `<label class="bebida-opcao${classe}"><input type="radio" name="bebida" value="${bebida}" required><span class="material-symbols-outlined" aria-hidden="true">${icone}</span><span>${bebida}</span></label>`;
