@@ -1635,8 +1635,9 @@ body.reveal-enabled .mac-category:nth-child(5)[data-reveal] {
     height: auto;
     aspect-ratio: 4 / 3;
     object-fit: contain;
-    border-radius: 3px;
+    border-radius: 6px;
     background: rgba(255, 255, 255, 0.035);
+    filter: brightness(0.9) contrast(1.06) saturate(0.98);
 }
 
 .site-mac .bebida-item h2 {
@@ -1646,7 +1647,20 @@ body.reveal-enabled .mac-category:nth-child(5)[data-reveal] {
     justify-content: center;
     margin-top: 12px;
     color: #f7f5ef;
-    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.site-mac .bebida-item p {
+    margin: 8px 0 2px;
+    color: var(--mac-gold);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
     line-height: 1.2;
     text-align: center;
 }
@@ -2441,6 +2455,10 @@ body.site-mac[data-theme="light"] .bebida-item h2 {
     color: #201f1b;
 }
 
+body.site-mac[data-theme="light"] .bebida-item img {
+    filter: none;
+}
+
 body.site-mac[data-theme="light"] .card-burguer p {
     color: #805a00;
 }
@@ -2878,25 +2896,25 @@ body.site-mac[data-theme="light"] .mac-popular-menu .mac-section-heading h1 {
 
 
 html {
-    scrollbar-color: #f2c335 #090908;
-    scrollbar-width: thin;
+    scrollbar-color: #f2c335 #141412;
+    scrollbar-width: auto;
 }
 
 html[data-theme="light"] {
-    scrollbar-color: #946900 #f4f2ec;
+    scrollbar-color: #946900 #e8e5dd;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
     height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #090908;
+    background: #141412;
 }
 
 ::-webkit-scrollbar-thumb {
-    border: 2px solid #090908;
+    border: 3px solid #141412;
     border-radius: 999px;
     background: #f2c335;
 }
@@ -2906,11 +2924,11 @@ html[data-theme="light"] {
 }
 
 html[data-theme="light"]::-webkit-scrollbar-track {
-    background: #f4f2ec;
+    background: #e8e5dd;
 }
 
 html[data-theme="light"]::-webkit-scrollbar-thumb {
-    border-color: #f4f2ec;
+    border-color: #e8e5dd;
     background: #946900;
 }
 
